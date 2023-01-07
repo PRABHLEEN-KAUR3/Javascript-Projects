@@ -1,0 +1,39 @@
+<!-- TO DO -  create some date button, create a button, apply a event listener on that button such that when you click on that button, you show on that screen separately date, day, month and a year. then show a sentence in which you show all those things together.-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
+<h1 style = "text-align: center;">Welcome to Prabhleen Kaur's webpage </h1>
+
+<script src = "./dateBtn.js"></script>
+<p style = "margin:auto; padding: 2%; color: rgb(168, 29, 129); font-size:200%; font-style:italic;"> 
+    To know the current Date, Day, Month, Time and Year: 
+</p>
+<p id = "display">  
+    <strong>Click here :</strong> 
+<button id = "button" onclick = displayDate()>Display Date </button>
+</p>
+<style>
+    #button:hover{
+        background-color: antiquewhite;
+        border-radius: 1ch;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    #display{
+        margin:auto;
+        padding-left: 2%; 
+        font-size:larger;
+    }
+</style>
+</body>
+</html>
+
+
