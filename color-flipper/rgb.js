@@ -1,15 +1,16 @@
-// For Any Color
 const btn = document.getElementById('btn');
 const color = document.querySelector('.color');
 
 btn.addEventListener('click', function () {
-    function getRandNum(max, min) {
-        return Math.floor(Math.random() * (max - min) + min);
-    };
-    debugger;
-    let x = getRandNum(0, 256);
-    let y = getRandNum(0, 256);
-    const z = getRandNum(0, 256);
-    document.body.style.backgroundColor = "rgb" + "(" + x + "," + y + "," + z + ")";
-    color.textContent = "rgb" + "(" + x + "," + y + "," + z + ")";
+    let rgbColor = "rgb("
+    let x = getRandNumber(0, 256);
+    let y = getRandNumber(0, 256);
+    const z = getRandNumber(0, 256);
+
+    color.textContent = rgbColor +  x + "," + y + "," + z + ")";
+    document.body.style.backgroundColor = rgbColor + x + "," + y + "," + z + ")";
 }); 
+
+const getRandomNumber = () => {
+    return Math.floor(Math.random() * (max - min) + min);
+}
