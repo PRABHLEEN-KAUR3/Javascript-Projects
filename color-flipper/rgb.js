@@ -12,4 +12,4 @@ btn.addEventListener('click', function () {
     const z = getRandNum(0, 256);
     document.body.style.backgroundColor = "rgb" + "(" + x + "," + y + "," + z + ")";
     color.textContent = "rgb" + "(" + x + "," + y + "," + z + ")";
-});
+}); 
