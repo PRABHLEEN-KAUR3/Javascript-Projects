@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation App </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class = "app">
+
+        <div class  = "relax">
+            <video id = "meditate-video" autoplay loop muted poster="./videos/relax.mp4">
+                <source src="./videos/relax.mp4" type = "video/mp4">
+            </video>
+        </div> 
+
+        <div class = "title">
+            <h1 style = "font-size: 3rem;">MEDITATE</h1> 
+            <p style = "font-size: larger;"> --- Start your Day with Silence ---</p><br>
+        </div>
+
+        <div class = "options">
+            <button id = "birds" name = "redirect" onclick="window.location = './birds.html'">BIRDS</button>
+            <button id = "rain"> RAIN</button>
+            <button id = "wave"> WAVE</button>
+        </div>
+    </div>
+
+    <script type="./app.js"></script>
+
+</body>
+</html>

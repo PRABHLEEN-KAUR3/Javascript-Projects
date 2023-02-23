@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+#meditate-video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter:contrast(2px);
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 350px;
+    width: 400px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.options{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+}
+#birds:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+    background-color: rgb(2, 2, 55);
+    color: white;
+}
+#birds{
+    border: none;
+    margin-right: 3rem;
+    background-color: transparent;
+    font-size: x-large;
+    border-radius: 0.5rem;
+    padding:1rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+#rain:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+    background-color: rgb(2, 2, 55);
+    color: white;
+}
+#rain{
+    border: none;
+    margin-right: 3rem;
+    background-color: transparent;
+    font-size: x-large;
+    border-radius: 0.5rem;
+    padding:1rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+#wave:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+    background-color: rgb(2, 2, 55);
+    color: white;
+}
+#wave{
+    border: none;
+    margin-right: 3rem;
+    background-color: transparent;
+    font-size: x-large;
+    border-radius: 0.5rem;
+    padding:1rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Birds-page */
+.birds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.bird-title{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    height: 550px;
+    width: 450px;
+    border-radius: 10%;
+    background-color: aliceblue;
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
+}
+.buttons{
+    display: flex;
+    gap:2rem;
+    padding: 1rem;
+
+}
+#back-img, #play-btn, #stop-btn, #pause-btn{
+    display: flex;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+}
+
+#back-btn, #play-btn, #pause-btn, #stop-btn{
+    background-color: transparent;
+    border: none;
+}
+#back-btn:hover, #play-btn:hover, #pause-btn:hover, #stop-btn:hover{
+    transform: scale(1.5);
+
+}
+.counter {
+    margin-top: 2rem;
+    color: black;
+    font-size: 7rem;
+  }
+  
+#time-btn:hover {
+    background-color: black;
+    color: aliceblue;
+}
+.time-select {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+
+}
+#time-btn{
+  padding:1rem;
+  color: black;
+  width: 6rem;
+  height: 1rem;
+  background: none;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center; line-height: 1px;
+}

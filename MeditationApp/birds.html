@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation - Birds</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class = "birds">
+
+        <div class  = "relax">
+            <video id = "meditate-video" autoplay loop muted poster="./videos/relax.mp4">
+                <source src="./videos/bird.mp4" type = "video/mp4">
+            </video>
+            <audio id = "audio" >
+                <source src="./sounds/birds.mp3" type = "audio/mp3">
+            </audio>
+        </div> 
+
+        <div class = "bird-title">
+            <h1 style = "font-size: 3rem;">MEDITATE</h1> 
+            <p style = "font-size: larger;"> --- BIRDS ---</p><br>
+            <div class = "buttons">
+                <button id = "back-btn" onclick = "window.history.back()">
+                    <img id = "back-img"  src = "./logos/back.png"/>
+                </button>
+                <button id = "play-btn" onclick = "audio.play()">
+                    <img id = "back-img"  src = "./logos/play.png"/>
+                </button>
+                <button id = "pause-btn" onclick = "audio.pause()">
+                    <img id = "back-img"  src = "./logos/pause.png"/>
+                </button>
+                <button id = "stop-btn" onclick = "window.history.back()">
+                    <img id = "back-img"  src = "./logos/stop.png"/>
+                </button>
+            </div>
+            <label class="counter">0:00</label> 
+            <div class="time-select">
+                <button id = "time-btn" data-time="10">2 mins</button>
+                <button id = "time-btn" data-time="300">5 mins</button>
+                <button id = "time-btn" data-time="600">10 mins</button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script type="./app.js"></script>
+
+</body>
+</html>
